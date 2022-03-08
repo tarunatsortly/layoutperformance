@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#F2F2F2</color>
+    <color name="dark">#1d222b</color>
+    <color name="dusty_orange">#f36e2d</color>
+    <color name="grey_4f">#4f5366</color>
+    <color name="light_placeholder_color">#A5A9BE</color>
+    <color name="pale_grey_five">#f2f4fa</color>
+    <color name="white_color">@android:color/white</color>
+</resources>

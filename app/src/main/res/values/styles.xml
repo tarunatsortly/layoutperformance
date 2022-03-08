@@ -1,0 +1,17 @@
+<resources>
+    <style name="RippleEffectBorderless">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="TextInputLayoutHintText">
+        <item name="android:textColor">@color/text_input_layout_hint_text_color</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+    <style name="TextInputLayoutErrorText">
+        <item name="android:textColor">@color/text_input_layout_error_text_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+</resources>

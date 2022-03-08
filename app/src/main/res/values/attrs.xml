@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTextInputLayout">
+        <attr name="cti_startIcon" format="reference" />
+        <attr name="cti_startIconSize" format="integer" />
+        <attr name="cti_endIcon" format="reference" />
+        <attr name="cti_endIconSize" format="integer" />
+        <attr name="cti_bottomLine" format="boolean" />
+        <attr name="cti_bottomLine_color" format="integer" />
+        <attr name="cti_is_align_hint_with_edt" format="boolean" />
+        <attr name="cti_hintAnimation" format="boolean" />
+        <attr name="cti_hint" format="string" />
+        <attr name="cti_hint_enable" format="boolean" />
+        <attr name="cti_hint_color" format="reference" />
+        <attr name="cti_hint_size" format="integer" />
+        <attr name="cti_text" format="string" />
+        <attr name="cti_text_color" format="reference" />
+        <attr name="cti_text_size" format="integer" />
+        <attr name="cti_text_max_length" format="integer" />
+        <attr name="cti_hasInfo" format="boolean" />
+        <attr name="cti_line_color_with_info" format="boolean" />
+        <attr name="cti_default_text" format="string" />
+        <attr name="cti_default_icon" format="reference" />
+        <attr name="cti_default_color" format="reference" />
+        <attr name="cti_error_text" format="string" />
+        <attr name="cti_error_icon" format="reference" />
+        <attr name="cti_error_color" format="reference" />
+        <attr name="cti_warning_text" format="string" />
+        <attr name="cti_warning_icon" format="reference" />
+        <attr name="cti_warning_color" format="reference" />
+        <attr name="cti_success_text" format="string" />
+        <attr name="cti_success_icon" format="reference" />
+        <attr name="cti_success_color" format="reference" />
+        <attr name="cti_password_type" format="boolean" />
+        <attr name="cti_shows_background" format="boolean" />
+        <attr name="cti_counter" format="boolean" />
+        <attr name="cti_enabled" format="boolean" />
+        <attr name="cti_imeOptions">
+            <flag name="normal" value="0x00000000" />
+            <flag name="actionUnspecified" value="0x00000000" />
+            <flag name="actionNone" value="0x00000001" />
+            <flag name="actionGo" value="0x00000002" />
+            <flag name="actionSearch" value="0x00000003" />
+            <flag name="actionSend" value="0x00000004" />
+            <flag name="actionNext" value="0x00000005" />
+            <flag name="actionDone" value="0x00000006" />
+            <flag name="actionPrevious" value="0x00000007" />
+            <flag name="flagNoPersonalizedLearning" value="0x1000000" />
+            <flag name="flagNoFullscreen" value="0x2000000" />
+            <flag name="flagNavigatePrevious" value="0x4000000" />
+            <flag name="flagNavigateNext" value="0x8000000" />
+            <flag name="flagNoExtractUi" value="0x10000000" />
+            <flag name="flagNoAccessoryAction" value="0x20000000" />
+            <flag name="flagNoEnterAction" value="0x40000000" />
+            <flag name="flagForceAscii" value="0x80000000" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="InputLayout">
+        <attr name="hintTextAppearance" format="reference"/>
+        <attr name="errorTextAppearance" format="reference"/>
+        <attr name="android:paddingStart" format="reference"/>
+        <attr name="android:paddingTop" format="reference"/>
+        <attr name="android:paddingEnd" format="reference"/>
+        <attr name="android:paddingBottom" format="reference"/>
+    </declare-styleable>
+</resources>

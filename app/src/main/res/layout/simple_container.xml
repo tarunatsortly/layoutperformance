@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="85dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endGuideLine"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/dp_16"
+        />
+
+    <com.example.layout.InputLayout
+        android:id="@+id/text_input_layout"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_14"
+        android:paddingBottom="@dimen/dp_14"
+        app:boxBackgroundMode="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/firstImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--
+    <include
+        android:id="@+id/text_input_layout"
+        layout="@layout/custom_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/firstImageView"
+        app:layout_constraintTop_toTopOf="parent"/>
+    -->
+
+    <ImageView
+        android:id="@+id/firstImageView"
+        android:layout_width="@dimen/dp_38"
+        android:layout_height="@dimen/dp_38"
+        android:theme="@style/RippleEffectBorderless"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/dp_10"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/secondImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/text_input_layout"
+        />
+
+    <ImageView
+        android:id="@+id/secondImageView"
+        android:theme="@style/RippleEffectBorderless"
+        android:layout_width="@dimen/dp_38"
+        android:layout_height="@dimen/dp_38"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/dp_10"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintEnd_toStartOf="@id/alertImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/text_input_layout"/>
+
+
+    <ImageView
+        android:contentDescription="@string/blank"
+        android:id="@+id/alertImageView"
+        android:layout_width="@dimen/dp_38"
+        android:layout_height="@dimen/dp_38"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        android:padding="@dimen/dp_10"
+        android:theme="@style/RippleEffectBorderless"
+        app:layout_constraintEnd_toStartOf="@id/searchGoogleImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/text_input_layout" />
+
+    <ImageView
+        android:contentDescription="@string/blank"
+        android:id="@+id/searchGoogleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_38"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/dp_10"
+        android:scaleType="fitXY"
+        android:theme="@style/RippleEffectBorderless"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/text_input_layout"
+        app:layout_constraintEnd_toStartOf="@id/endGuideLine"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/hintLabel"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="@dimen/zero_dp"
+        android:minHeight="@dimen/dp_22"
+        android:layout_marginStart="@dimen/dp_16"
+        android:fontFamily="@font/regular"
+        android:textAllCaps="false"
+        android:textColor="@color/light_placeholder_color"
+        android:textSize="@dimen/sp_13"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_8"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/hintArrowIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/valueTextView"
+        />
+
+    <ImageView
+        android:contentDescription="@string/blank"
+        android:id="@+id/hintArrowIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:src="@drawable/icon_18_px_arrow_right"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/hintLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/hintLabel" />
+
+    <TextView
+        android:id="@+id/valueTextView"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_4"
+        app:layout_goneMarginTop="@dimen/dp_4"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:visibility="gone"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/separatorView" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/separatorView"/>
+
+    <View
+        android:id="@+id/separatorView"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/pale_grey_five"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/codeContainer"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/codeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="1"
+        android:layout_marginTop="@dimen/dp_1"
+        app:layout_constraintTop_toBottomOf="@id/text_input_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_26"
+            android:visibility="gone">
+
+            <ImageView
+                android:contentDescription="@string/blank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxWidth="@dimen/dp_300"
+                android:maxHeight="@dimen/dp_120"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+        <ImageView
+            android:contentDescription="@string/blank"
+            android:layout_alignEnd="@+id/cardView"
+            android:layout_alignTop="@+id/cardView"
+            android:layout_marginTop="-4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
